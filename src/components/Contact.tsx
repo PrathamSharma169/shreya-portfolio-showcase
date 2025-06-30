@@ -16,7 +16,7 @@ const Contact = () => {
       icon: Github,
       title: "GitHub",
       info: "View my projects",
-      href: "#",
+      href: "https://github.com/Shreya-og",
       color: "from-gray-600 to-gray-800",
       delay: "200"
     },
@@ -24,7 +24,7 @@ const Contact = () => {
       icon: Linkedin,
       title: "LinkedIn",
       info: "Professional network",
-      href: "#",
+      href: "https://www.linkedin.com/in/shreya-chaturvedi-96b437258",
       color: "from-blue-600 to-blue-800",
       delay: "400"
     }
@@ -56,6 +56,8 @@ const Contact = () => {
             <a 
               key={index}
               href={method.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/20 hover:border-white/40 transition-all duration-500 transform hover:scale-105 hover:-translate-y-4"
               style={{ animationDelay: `${method.delay}ms` }}
             >

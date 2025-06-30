@@ -79,12 +79,14 @@ const Hero = () => {
           <div className="flex items-center gap-4">
             {[
               { icon: Mail, href: "mailto:shreyachaturved@gmail.com", color: "from-blue-500 to-purple-500" },
-              { icon: Github, href: "#", color: "from-gray-600 to-gray-800" },
-              { icon: Linkedin, href: "#", color: "from-blue-600 to-blue-800" }
+              { icon: Github, href: "https://github.com/Shreya-og", color: "from-gray-600 to-gray-800" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/shreya-chaturvedi-96b437258", color: "from-blue-600 to-blue-800" }
             ].map((social, index) => (
               <a 
                 key={index}
                 href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`group relative p-4 bg-gradient-to-r ${social.color} rounded-full shadow-2xl hover:shadow-xl transform hover:scale-110 hover:-translate-y-2 transition-all duration-300`}
               >
                 <div className="absolute inset-0 bg-white/20 rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
